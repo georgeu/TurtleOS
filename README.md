@@ -1,4 +1,9 @@
 TurtleOS
 ========
+Welcome to TurtleOS!
 
-TurtleOS by georgeu and will.i.am
+
+Credits
+=======
+- georgeu
+- will.i.am
