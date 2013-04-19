@@ -111,7 +111,7 @@
 								alert("I'm going to eat you")
 							}
 							if (tortoises === "no"){
-								alert("Good for you. Now get back to TurtleOS")
+								alert("Good for you. Now go back to TurtleOS")
 							}
 							tortoiseOS()
 						}
