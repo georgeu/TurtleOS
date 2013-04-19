@@ -1,0 +1,163 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>TurtleOS</title>
+	</head>
+	<body style="background-color:darkblue">
+
+		<img src="http://i49.tinypic.com/2r4kjup.png" title="Welcome to TurtleOS" alt="Welcome to TurtleOS" />
+		<div id="turtleButton"><button type="button" onclick="userName()">Start TurtleOS</button></div>
+		
+		<script>
+			var userName = function () {
+				var userInput = prompt("What's your username?").toLowerCase()
+				var passwordInput = prompt("What's your password, " + userInput + ", if that is who you say you are")
+				if (userInput === "george" && passwordInput === "password") {
+					turtleOS()
+				}
+				if (userInput === "will.i.am" && passwordInput === "password") {
+					turtleOS()
+				}
+				else {
+					alert("The user or password you entered was incorrect. I can't be bothered to make a way to work out which is wrong so deal with it. If you're trying to hack into TurtleOS, next time try harder")
+				}
+			}
+				
+			var turtleOS = function () {
+				var turtles = prompt("Welcome to TurtleOS\nWhat would you like to do?").toLowerCase()
+				
+				// The list of programs
+				var programs = ["turtle", "calculator", "time", "date", "tortoiseOS", "version", "credits"]
+
+				if (turtles === "turtle") {
+					var turtle = prompt("Do you like turtles?").toLowerCase()
+
+				  	if (turtle === "yes") {
+				    		alert("Good for you")
+				    	}
+				    	if (turtle === "no") {
+				    		alert("I'm going to eat you")
+				    	}
+				}
+				if (turtles === "calculator"){
+					var calculate = function(){
+						var calculator = prompt("Whats the operation?").toLowerCase()
+
+						if (calculator === "multiply"){
+							var mul1 = prompt("Whats the first number?")
+							var mul2 = prompt("Whats the second number?")
+							alert(mul1 * mul2)
+						}
+						if (calculator === "divide") {
+							var div1 = prompt("Whats the first number?")
+							var div2 = prompt("Whats the second number?")
+							alert(div1 / div2)
+						}
+						if (calculator === "subtract") {
+							var sub1 = prompt("Whats the first number?")
+							var sub2 = prompt("Whats the second number?")
+							alert(sub1 - sub2)
+						}
+						if (calculator === "add") {
+							var add1= prompt("Whats the first number?")
+							var add2 = prompt("Whats the second number?")
+							var add3 = 999999999999999999999999999999999999999999999999999999999999999999999999999999
+							var add4 = (add3 - add1)
+							var add5 = (add4 - add2)
+							var add6 = (add3 - add5)
+							alert("I thought I told you not to use it")
+						}
+						if (calculator === "operations") {
+							alert("The operations you can do are: \n-multiply\n-divide\n-subtract\n-add - STILL DOESN'T WORK")
+							calculate()
+						}
+					}
+					calculate()
+				}
+				if (turtles === "time"){
+					var time = new Date().getHours()
+					var mins = new Date().getMinutes()
+					if (mins < 10){
+						alert("It is " + time + ":0" + mins)
+					}
+					if (mins > 10){
+						alert("It is " + time + ":" + mins)
+					}
+				}
+				if (turtles === "date"){
+					var date = new Date().getDate()
+					var month = new Date().getMonth()
+					var year = new Date().getYear()
+					alert(date + "/" + month + "/" + year)
+				}
+				if (turtles === "programs"){
+					alert(programs)
+				}
+				if (turtles === "credits"){
+					alert("Coding: George\nEaster Eggs: Will.i.am\nMoral Support: Adim, Alexkins and Jack Jack")
+				}
+				if (turtles === "version") {
+				    alert("TurtleOS version 2.7")
+				}
+				if (turtles === "tortoiseos"){
+					var tortoiseOS = function () {
+						var tortoise = prompt("Welcome to TortoiseOS\nWhat would you like to do?").toLowerCase()
+						if (tortoise === "turtleos"){
+							turtleOS()
+						}
+						if (tortoise === "tortoise"){
+							var tortoises = prompt("Do you like tortoises?")
+							if (tortoises === "yes"){
+								alert("I'm going to eat you")
+							}
+							if (tortoises === "no"){
+								alert("Good for you. Now get back to TurtleOS")
+							}
+							tortoiseOS()
+						}
+						else {
+							alert("TortoiseOS sucks. Go back to TurtleOS")
+							tortoiseOS()
+						}
+					}
+					tortoiseOS()
+				}
+				if (turtles === "hello") {
+					alert("Hello World!")
+				}
+				if (turtles === "binary"){
+					alert("01101")
+				}
+				if (turtles === "easter egg"){
+					alert("This is definately not an Easter Egg")
+				}
+				if (turtles === "poop"){
+					alert("That's not very mature")
+				}
+				if (turtles === "fork"){
+					alert("Spoon")
+				}
+				if (turtles === "spoon"){
+					alert("Knife")
+				}	
+				if (turtles === "knife"){
+					alert("Fork")
+				}
+				if (turtles === "update"){
+					alert("Update 3.0 coming soon")
+				}
+				if (turtles === "boomstick"){
+					alert("Groovy")
+				}
+				if (turtles === "chicken nuggets"){
+					alert("Yummy") 
+				}
+				}
+				if (turtles === "wallaby way"){
+					alert("Don't be a Wallaby")
+				}
+				turtleOS()
+			}
+		</script>
+	</body>
+</html>
